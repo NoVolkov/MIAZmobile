@@ -2,17 +2,46 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinTest.RegistratePage">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/Assets/style.css" />
+    </ContentPage.Resources>
     <ContentPage.Content>
+        
         <StackLayout>
             <Frame BackgroundColor="#5b61b3">
                 <StackLayout>
                     <Label Text="HEALTHAN" HorizontalOptions="Start"></Label>
-                    <Label Text="Пациент" HorizontalOptions="Start"></Label>
+                    <Label Text="Пациент" HorizontalOptions="End"></Label>
                 </StackLayout>
             </Frame>
             <StackLayout Padding="10">
-                <Frame BackgroundColor="#5b61b3" >
-                    <Entry x:Name="txt_Snils" Placeholder="Снилс"></Entry>
+                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
+                    <Entry x:Name="txt_Snils" TextColor="White" PlaceholderColor="White" Placeholder="Снилс"></Entry>
+                </Frame>
+                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
+                    <Entry x:Name="txt_Snils" Placeholder="Пароль"></Entry>
+                </Frame>
+                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
+                    <Entry x:Name="txt_Snils" Placeholder="Повторите пароль"></Entry>
+                </Frame>
+                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
+                    <Entry x:Name="txt_Snils" Placeholder="Рост"></Entry>
+                </Frame>
+                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
+                    <Entry x:Name="txt_Snils" Placeholder="Вес"></Entry>
+                </Frame>
+                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
+                    <Entry x:Name="txt_Snils" Placeholder="Возраст"></Entry>
+                </Frame>
+                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
+                    <Entry x:Name="txt_Snils" Placeholder="Фамилия"></Entry>
+                </Frame>
+                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
+                    <Entry x:Name="txt_Snils" Placeholder="Имя"></Entry>
+                </Frame>
+                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
+                    <Entry x:Name="txt_Snils" Placeholder="Отчество"></Entry>
                 </Frame>
             </StackLayout>
         </StackLayout>
