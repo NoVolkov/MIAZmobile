@@ -16,5 +16,11 @@ namespace XamarinTest
         {
             InitializeComponent();
         }
+
+        private void btn_Regist(object sender, System.EventArgs e)
+        {
+            Button button = (Button)sender;
+            button.Text = "Нажато!";
+        }
     }
 }

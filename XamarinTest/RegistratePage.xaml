@@ -7,41 +7,44 @@
         <StyleSheet Source="/Assets/style.css" />
     </ContentPage.Resources>
     <ContentPage.Content>
-        
-        <StackLayout>
-            <Frame BackgroundColor="#5b61b3">
+
+        <StackLayout BackgroundColor="#E0FBFC">
+            <Frame BackgroundColor="#0091AD">
                 <StackLayout>
-                    <Label Text="HEALTHAN" HorizontalOptions="Start"></Label>
+                    <Label Text="HEALTHAN" FontFamily="Oswald"  HorizontalOptions="Start" ></Label>
                     <Label Text="Пациент" HorizontalOptions="End"></Label>
                 </StackLayout>
             </Frame>
             <StackLayout Padding="10">
-                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
+                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
                     <Entry x:Name="txt_Snils" TextColor="White" PlaceholderColor="White" Placeholder="Снилс"></Entry>
                 </Frame>
-                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
-                    <Entry x:Name="txt_Snils" Placeholder="Пароль"></Entry>
+                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10" Margin="14, 0">
+                    <Entry x:Name="txt_Password" TextColor="White" PlaceholderColor="White"  Placeholder="Пароль"></Entry>
                 </Frame>
-                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
-                    <Entry x:Name="txt_Snils" Placeholder="Повторите пароль"></Entry>
+                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10"  Margin="14, 0">
+                    <Entry x:Name="txt_PasswordRepeat"  TextColor="White" PlaceholderColor="White" Placeholder="Повторите пароль"></Entry>
                 </Frame>
-                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
-                    <Entry x:Name="txt_Snils" Placeholder="Рост"></Entry>
+                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
+                    <Entry x:Name="txt_Height"  TextColor="White" PlaceholderColor="White" Placeholder="Рост"></Entry>
                 </Frame>
-                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
-                    <Entry x:Name="txt_Snils" Placeholder="Вес"></Entry>
+                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
+                    <Entry x:Name="txt_Weight"  TextColor="White" PlaceholderColor="White" Placeholder="Вес"></Entry>
                 </Frame>
-                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
-                    <Entry x:Name="txt_Snils" Placeholder="Возраст"></Entry>
+                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
+                    <Entry x:Name="txt_Age"  TextColor="White" PlaceholderColor="White" Placeholder="Возраст"></Entry>
                 </Frame>
-                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
-                    <Entry x:Name="txt_Snils" Placeholder="Фамилия"></Entry>
+                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
+                    <Entry x:Name="txt_Surname" TextColor="White" PlaceholderColor="White"  Placeholder="Фамилия"></Entry>
                 </Frame>
-                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
-                    <Entry x:Name="txt_Snils" Placeholder="Имя"></Entry>
+                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
+                    <Entry x:Name="txt_Name" TextColor="White" PlaceholderColor="White"  Placeholder="Имя"></Entry>
                 </Frame>
-                <Frame BackgroundColor="#5b61b3" CornerRadius="35" Padding="0 10 0 10">
-                    <Entry x:Name="txt_Snils" Placeholder="Отчество"></Entry>
+                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
+                    <Entry x:Name="txt_Patronymic" TextColor="White" PlaceholderColor="White"  Placeholder="Отчество"></Entry>
+                </Frame>
+                <Frame BackgroundColor="#2A9D8F" CornerRadius="35" Padding="0, 10, 0, 10">
+                    <Button Text="Зарегестрироваться" BackgroundColor="#2A9D8F"  TextColor="White" HorizontalOptions="Center" Clicked="btn_Regist"></Button>
                 </Frame>
             </StackLayout>
         </StackLayout>
