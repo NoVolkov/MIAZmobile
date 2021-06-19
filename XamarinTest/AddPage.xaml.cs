@@ -23,6 +23,7 @@ namespace XamarinTest
         }
         private void picker_SelectedIndexChanged(object sender, EventArgs e)
         {
+        }
 
         }
         private void topCheack(object sender, TextChangedEventArgs e)
@@ -37,5 +38,5 @@ namespace XamarinTest
             }
 
         }
-    }
+    
 }
