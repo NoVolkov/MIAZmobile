@@ -29,7 +29,11 @@ namespace XamarinTest
         {
             if (!Int32.TryParse(e.NewTextValue, out int p))
             {
-                txt_TopPres.Text = "";
+                txt_TopPres.Text = ""+e.OldTextValue;
+            }
+            if(!(0<p && p > 300))
+            {
+                txt_TopPres.Text = "" + e.OldTextValue;
             }
 
         }
