@@ -12,7 +12,10 @@ namespace XamarinTest
 
             MainPage = new AddPage();
         }
-        //__
+        /// <summary>
+        /// /////////
+        /// </summary>
+        /// ///////////
         protected override void OnStart()
         {
         }
