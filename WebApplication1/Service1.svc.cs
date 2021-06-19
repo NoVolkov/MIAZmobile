@@ -64,6 +64,29 @@ namespace WebApplication1
 
             }
         }
+        [WebGet(UriTemplate = "/Patient/{snils}")]
+
+        public string getPatientBySnils(string snils)
+        {
+            Patient p = new Patient();
+            using (SqlConnection con = new SqlConnection(STR_CON))
+            {
+                SqlCommand com = new SqlCommand("SELECT * FROM Patient WHERE ID=@id", con);
+                SqlParameter par = new SqlParameter("@ID", System.Data.SqlDbType.Int);
+                com.Parameters.Add(par);
+                SqlDataReader r = com.ExecuteReader();
+                while (r.Read())
+                {
+                    p.Id = (int)r["ID"];
+                    p.Name = (string)r["Name"];
+                    p.Surname = (string)r["Surname"];
+                    p.Weight = (double)r["Weight"];
+                    p.Height = (double)r["Height"];
+                }
+                con.Close();
+            }
+            return JsonSerializer.Serialize(p);
+        }
         // Добавьте здесь дополнительные операции и отметьте их атрибутом [OperationContract]
     }
 }
