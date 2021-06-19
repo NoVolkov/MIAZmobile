@@ -24,8 +24,6 @@ namespace XamarinTest
         private void picker_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
-
-        }
         private void topCheack(object sender, TextChangedEventArgs e)
         {
             if (!Int32.TryParse(e.NewTextValue, out int p))
@@ -34,5 +32,6 @@ namespace XamarinTest
             }
 
         }
-    
+    }
+        
 }
