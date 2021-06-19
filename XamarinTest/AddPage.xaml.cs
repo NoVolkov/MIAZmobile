@@ -25,5 +25,13 @@ namespace XamarinTest
         {
 
         }
+        private void topCheack(object sender, TextChangedEventArgs e)
+        {
+            if (!Int32.TryParse(e.NewTextValue, out int p))
+            {
+                txt_TopPres.Text = "";
+            }
+
+        }
     }
 }
