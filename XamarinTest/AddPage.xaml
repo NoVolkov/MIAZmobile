@@ -30,7 +30,19 @@
                         <Entry Grid.Column="0" BackgroundColor="#2A9D8F" x:Name="txt_TopPres" TextColor="White" PlaceholderColor="White" Placeholder="Верх" VerticalOptions="Start"></Entry>
                         <Entry Grid.Column="1" BackgroundColor="#2A9D8F" x:Name="txt_BotPres" TextColor="White" PlaceholderColor="White" Placeholder="Нижн" ></Entry>
                         <Label Grid.Column="2" TextColor="Black" Text="мм. рт. ст." VerticalOptions="End" Padding="0,0,5,10"></Label>
+                        
                     </Grid>
+                    <StackLayout>
+                        <Label x:Name="header" Text="Состояние" FontSize="Large" />
+                        <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged">
+                            <Picker.Items>
+                                <x:String>Спокойное</x:String>
+                                <x:String>Встревоженное</x:String>
+                                <x:String>После физической нагрузки</x:String>
+                                <x:String>Болезненное</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
                     <Frame BackgroundColor="#2A9D8F" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
                         <Button Text="Добавить" BackgroundColor="#2A9D8F" FontSize="20" TextColor="White" HorizontalOptions="Center" Clicked="Add"></Button>
 
