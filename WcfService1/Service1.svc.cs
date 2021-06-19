@@ -17,7 +17,7 @@ namespace WcfService1
     [AspNetCompatibilityRequirements(RequirementsMode =AspNetCompatibilityRequirementsMode.Allowed)]
     public class Service1 : IService1
     {
-        private string STR_CON = @"Data Source=192.168.66.191,49674;Initial Catalog=Билетное_обслуживание_пассажиров;Persist Security Info=True;User ID=USER;Password=123456";
+        private string STR_CON = @"Data Source=192.168.66.191,49674;Initial Catalog=miac;Persist Security Info=True;User ID=USER;Password=123456";
         public string GetPatient(string snils)
         {
             Patient p = new Patient();
