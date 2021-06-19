@@ -23,9 +23,10 @@ namespace WcfService1
             Patient p = new Patient();
             using (SqlConnection con =new SqlConnection(STR_CON))
             {
-                SqlCommand com = new SqlCommand("SELECT *FROM Patient WHERE SNILS= @snils", con);
-                SqlParameter prm = new SqlParameter("@snils", System.Data.SqlDbType.NVarChar);
-                com.Parameters.Add(prm);
+                SqlCommand com = new SqlCommand("SELECT * FROM Patient WHERE SNILS="+snils, con);
+               // SqlParameter prm = new SqlParameter("@snils", System.Data.SqlDbType.NVarChar);
+               // prm.Value = snils;
+              //  com.Parameters.Add(prm);
                 con.Open();
                 SqlDataReader r = com.ExecuteReader();
                 while (r.Read())
