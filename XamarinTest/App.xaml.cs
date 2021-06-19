@@ -10,7 +10,7 @@ namespace XamarinTest
         {
             InitializeComponent();
 
-            MainPage = new AddPage();
+            MainPage = new Auth();
         }
         /// <summary>
         /// /////////
