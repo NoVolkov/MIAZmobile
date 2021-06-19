@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WebApplication1.models
 {
-    public class Patient
+    public class Patient//====
     {
         //класс клиента
         public int Id { get; set; }
