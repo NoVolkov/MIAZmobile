@@ -3,50 +3,58 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinTest.RegistratePage">
 
-    <ContentPage.Resources>
-        <StyleSheet Source="/Assets/style.css" />
-    </ContentPage.Resources>
-    <ContentPage.Content>
 
+
+    <ContentPage.Content>
+        
         <StackLayout BackgroundColor="#E0FBFC">
+           
             <Frame BackgroundColor="#0091AD">
                 <StackLayout>
-                    <Label Text="HEALTHAN" FontFamily="Oswald"  HorizontalOptions="Start" ></Label>
-                    <Label Text="Пациент" HorizontalOptions="End"></Label>
+                    <Grid MinimumHeightRequest="100">
+                        
+                        <Label  Grid.Column="0" Text="HEALTHAN" TextColor="WhiteSmoke" FontFamily="Oswald" FontSize="30"  HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                        <Label Grid.Column="1" Text="Пациент" TextColor="WhiteSmoke" FontSize="20" FontFamily="Oswald" HorizontalOptions="End" TextDecorations="Underline" VerticalOptions="Center"></Label>
+
+                    </Grid>
                 </StackLayout>
+                
             </Frame>
-            <StackLayout Padding="10">
-                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
-                    <Entry x:Name="txt_Snils" TextColor="White" PlaceholderColor="White" Placeholder="Снилс"></Entry>
-                </Frame>
-                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10" Margin="14, 0">
-                    <Entry x:Name="txt_Password" TextColor="White" PlaceholderColor="White"  Placeholder="Пароль"></Entry>
-                </Frame>
-                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10"  Margin="14, 0">
-                    <Entry x:Name="txt_PasswordRepeat"  TextColor="White" PlaceholderColor="White" Placeholder="Повторите пароль"></Entry>
-                </Frame>
-                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
-                    <Entry x:Name="txt_Height"  TextColor="White" PlaceholderColor="White" Placeholder="Рост"></Entry>
-                </Frame>
-                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
-                    <Entry x:Name="txt_Weight"  TextColor="White" PlaceholderColor="White" Placeholder="Вес"></Entry>
-                </Frame>
-                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
-                    <Entry x:Name="txt_Age"  TextColor="White" PlaceholderColor="White" Placeholder="Возраст"></Entry>
-                </Frame>
-                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
-                    <Entry x:Name="txt_Surname" TextColor="White" PlaceholderColor="White"  Placeholder="Фамилия"></Entry>
-                </Frame>
-                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
-                    <Entry x:Name="txt_Name" TextColor="White" PlaceholderColor="White"  Placeholder="Имя"></Entry>
-                </Frame>
-                <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="0, 10, 0, 10">
-                    <Entry x:Name="txt_Patronymic" TextColor="White" PlaceholderColor="White"  Placeholder="Отчество"></Entry>
-                </Frame>
-                <Frame BackgroundColor="#2A9D8F" CornerRadius="35" Padding="0, 10, 0, 10">
-                    <Button Text="Зарегестрироваться" BackgroundColor="#2A9D8F"  TextColor="White" HorizontalOptions="Center" Clicked="btn_Regist"></Button>
-                </Frame>
-            </StackLayout>
+            
+            <ScrollView>
+                <StackLayout Padding="10">
+                    <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
+                        <Entry x:Name="txt_Snils" TextColor="White" PlaceholderColor="White" Placeholder="Снилс"></Entry>
+                    </Frame>
+                    <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0, 14">
+                        <Entry x:Name="txt_Password" TextColor="White" PlaceholderColor="White"  Placeholder="Пароль"></Entry>
+                    </Frame>
+                    <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="5, 10, 5, 10"  Margin="0,14">
+                        <Entry x:Name="txt_PasswordRepeat"  TextColor="White" PlaceholderColor="White" Placeholder="Повторите пароль"></Entry>
+                    </Frame>
+                    <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
+                        <Entry x:Name="txt_Height"  TextColor="White" PlaceholderColor="White" Placeholder="Рост"></Entry>
+                    </Frame>
+                    <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
+                        <Entry x:Name="txt_Weight"  TextColor="White" PlaceholderColor="White" Placeholder="Вес"></Entry>
+                    </Frame>
+                    <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
+                        <Entry x:Name="txt_Age"  TextColor="White" PlaceholderColor="White" Placeholder="Возраст"></Entry>
+                    </Frame>
+                    <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
+                        <Entry x:Name="txt_Surname" TextColor="White" PlaceholderColor="White"  Placeholder="Фамилия"></Entry>
+                    </Frame>
+                    <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
+                        <Entry x:Name="txt_Name" TextColor="White" PlaceholderColor="White"  Placeholder="Имя"></Entry>
+                    </Frame>
+                    <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
+                        <Entry x:Name="txt_Patronymic" TextColor="White" PlaceholderColor="White"  Placeholder="Отчество"></Entry>
+                    </Frame>
+                    <Frame BackgroundColor="#2A9D8F" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
+                        <Button Text="Зарегестрироваться" BackgroundColor="#2A9D8F"  TextColor="White" HorizontalOptions="Center" Clicked="btn_Regist"></Button>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

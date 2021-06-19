@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinTest.Auth">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#E0FBFC">
+
+            <Frame BackgroundColor="#0091AD">
+                <StackLayout>
+                    <Grid MinimumHeightRequest="100">
+
+                        <Label  Grid.Column="0" Text="HEALTHAN" TextColor="WhiteSmoke" FontFamily="Oswald" FontSize="30"  HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                        <Label Grid.Column="1" Text="Пациент" TextColor="WhiteSmoke" FontSize="20" FontFamily="Oswald" HorizontalOptions="End" TextDecorations="Underline" VerticalOptions="Center"></Label>
+
+                    </Grid>
+                </StackLayout>
+
+            </Frame>
+
+            <ScrollView>
+                <StackLayout Padding="10" VerticalOptions="Center">
+                    <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
+                        <Entry x:Name="txt_Snils" TextColor="White" PlaceholderColor="White" Placeholder="Снилс"></Entry>
+                    </Frame>
+                    <Frame BackgroundColor="#0091AD" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0, 14">
+                        <Entry x:Name="txt_Password" TextColor="White" PlaceholderColor="White"  Placeholder="Пароль"></Entry>
+                    </Frame>
+                    <Frame BackgroundColor="#2A9D8F" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
+                        <Button Text="Войти" BackgroundColor="#2A9D8F" FontSize="20" TextColor="White" HorizontalOptions="Center" Clicked="btn_Enter"></Button>
+
+                    </Frame>
+                    <Frame HorizontalOptions="Center" Padding="10">
+                        <Button TextColor="#2A9D8F" VerticalOptions="Center" HorizontalOptions="Center" Text="Регистрация" BackgroundColor="White" Margin="0" Clicked="btn_Reg"></Button>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

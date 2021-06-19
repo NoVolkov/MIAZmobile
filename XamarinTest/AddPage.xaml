@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinTest.AddPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#E0FBFC">
+
+            <Frame BackgroundColor="#0091AD">
+                <StackLayout>
+                    <Grid MinimumHeightRequest="100">
+
+                        <Label  Grid.Column="0" Text="HEALTHAN" TextColor="WhiteSmoke" FontFamily="Oswald" FontSize="30"  HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                        <Label Grid.Column="1" Text="Пациент" TextColor="WhiteSmoke" FontSize="20" FontFamily="Oswald" HorizontalOptions="End" TextDecorations="Underline" VerticalOptions="Center"></Label>
+
+                    </Grid>
+                </StackLayout>
+
+            </Frame>
+
+            <ScrollView>
+                <StackLayout Padding="10" VerticalOptions="Center">
+                   
+                    <Grid Margin="0,14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="3*"></ColumnDefinition>
+                            
+                        </Grid.ColumnDefinitions>
+                        <Entry Grid.Column="0" BackgroundColor="#2A9D8F" x:Name="txt_TopPres" TextColor="White" PlaceholderColor="White" Placeholder="Верх" VerticalOptions="Start"></Entry>
+                        <Entry Grid.Column="1" BackgroundColor="#2A9D8F" x:Name="txt_BotPres" TextColor="White" PlaceholderColor="White" Placeholder="Нижн" ></Entry>
+                        <Label Grid.Column="2" TextColor="Black" Text="мм. рт. ст." VerticalOptions="End" Padding="0,0,5,10"></Label>
+                    </Grid>
+                    <Frame BackgroundColor="#2A9D8F" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
+                        <Button Text="Добавить" BackgroundColor="#2A9D8F" FontSize="20" TextColor="White" HorizontalOptions="Center" Clicked="Add"></Button>
+
+                    </Frame>
+                    
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
