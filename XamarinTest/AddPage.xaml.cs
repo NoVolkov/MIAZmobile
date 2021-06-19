@@ -23,7 +23,7 @@ namespace XamarinTest
         }
         private void picker_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
+
     }
 }
