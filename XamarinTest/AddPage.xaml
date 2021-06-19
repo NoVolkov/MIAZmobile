@@ -10,7 +10,7 @@
                     <Grid MinimumHeightRequest="100">
 
                         <Label  Grid.Column="0" Text="HEALTHAN" TextColor="WhiteSmoke" FontFamily="Oswald" FontSize="30"  HorizontalOptions="Start" VerticalOptions="Center"></Label>
-                        <Label Grid.Column="1" Text="Пациент" TextColor="WhiteSmoke" FontSize="20" FontFamily="Oswald" HorizontalOptions="End" TextDecorations="Underline" VerticalOptions="Center"></Label>
+                        <Label Grid.Column="1" x:Name="namePatient" Text="Пациент" TextColor="WhiteSmoke" FontSize="20" FontFamily="Oswald" HorizontalOptions="End" TextDecorations="Underline" VerticalOptions="Center"></Label>
 
                     </Grid>
                 </StackLayout>
