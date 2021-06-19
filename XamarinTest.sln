@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinTest", "XamarinTest\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{904A878A-DD29-49CB-9ED4-14C85C8E6949}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService1", "WcfService1\WcfService1.csproj", "{0533ACA6-1375-48DD-9BC7-4798312D12CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{904A878A-DD29-49CB-9ED4-14C85C8E6949}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{904A878A-DD29-49CB-9ED4-14C85C8E6949}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{904A878A-DD29-49CB-9ED4-14C85C8E6949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0533ACA6-1375-48DD-9BC7-4798312D12CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0533ACA6-1375-48DD-9BC7-4798312D12CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0533ACA6-1375-48DD-9BC7-4798312D12CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0533ACA6-1375-48DD-9BC7-4798312D12CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

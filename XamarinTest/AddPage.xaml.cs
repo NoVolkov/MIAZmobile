@@ -18,14 +18,13 @@ namespace XamarinTest
         public AddPage()
         {
             InitializeComponent();
-           
+            loadPage("12345678901");
             
         }
-        public async void loadPage(string snils)
+        public  void loadPage(string snils)
         {
-            HttpClient client = Client.GetClient();
-            string result = await client.GetStringAsync(Client.Url+ "/Patient/"+snils);
-            Patient p = JsonSerializer.Deserialize<Patient>(result);
+            WcfService1.Service1 service = new WcfService1.Service1();
+            Patient p = JsonSerializer.Deserialize<Patient>(service.GetPatient(snils));
             namePatient.Text = p.Surname + " " + p.Name;
             Weight.Text = Convert.ToString(p.Weight);
             Height.Text = Convert.ToString(p.Height);
