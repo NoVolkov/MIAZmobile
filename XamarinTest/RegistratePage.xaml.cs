@@ -22,7 +22,7 @@ namespace XamarinTest
             InitializeComponent();
             
         }
-
+        //
         private async void btn_Regist(object sender, System.EventArgs e)
         {
             /*Button button = (Button)sender;
