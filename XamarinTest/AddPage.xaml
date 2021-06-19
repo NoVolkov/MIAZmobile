@@ -18,7 +18,7 @@
             </Frame>
 
             <ScrollView>
-                <StackLayout Padding="10" VerticalOptions="Center">
+                <StackLayout Padding="10" VerticalOptions="Center" HorizontalOptions="Center">
                    
                     <Grid Margin="0,14">
                         <Grid.ColumnDefinitions>
@@ -27,22 +27,41 @@
                             <ColumnDefinition Width="3*"></ColumnDefinition>
                             
                         </Grid.ColumnDefinitions>
-                        <Entry Grid.Column="0" BackgroundColor="#2A9D8F" x:Name="txt_TopPres" TextColor="White" PlaceholderColor="White" Placeholder="Верх" VerticalOptions="Start"></Entry>
-                        <Entry Grid.Column="1" BackgroundColor="#2A9D8F" x:Name="txt_BotPres" TextColor="White" PlaceholderColor="White" Placeholder="Нижн" ></Entry>
+                        <Entry Grid.Column="0" BackgroundColor="#0091AD" x:Name="txt_TopPres" TextColor="White" PlaceholderColor="White" Placeholder="Верх" VerticalOptions="Start"></Entry>
+                        <Entry Grid.Column="1" BackgroundColor="#0091AD" x:Name="txt_BotPres" TextColor="White" PlaceholderColor="White" Placeholder="Нижн" ></Entry>
                         <Label Grid.Column="2" TextColor="Black" Text="мм. рт. ст." VerticalOptions="End" Padding="0,0,5,10"></Label>
                         
                     </Grid>
                     <StackLayout>
-                        <Label x:Name="header" Text="Состояние" FontSize="Large" />
-                        <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged">
-                            <Picker.Items>
-                                <x:String>Спокойное</x:String>
-                                <x:String>Встревоженное</x:String>
-                                <x:String>После физической нагрузки</x:String>
-                                <x:String>Болезненное</x:String>
-                            </Picker.Items>
-                        </Picker>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                
+
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" x:Name="header" Text="Состояние:" FontSize="20"/>
+                            <Picker Grid.Column="1" x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged" BackgroundColor="#0091AD">
+                                <Picker.Items>
+                                    <x:String>Спокойное</x:String>
+                                    <x:String>Встревоженное</x:String>
+                                    <x:String>После физической нагрузки</x:String>
+                                    <x:String>Болезненное</x:String>
+                                </Picker.Items>
+                            </Picker>
+                        </Grid>
                     </StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+
+
+                        </Grid.ColumnDefinitions>
+                        <Entry Grid.Column="0" x:Name="Weight" BackgroundColor="#0091AD" TextColor="White" PlaceholderColor="White"  Placeholder="Вес" ></Entry>
+                        <Entry Grid.Column="1" x:Name="Height" BackgroundColor="#0091AD" TextColor="White" PlaceholderColor="White"  Placeholder="Рост" ></Entry>
+                        
+                    </Grid>
                     <Frame BackgroundColor="#2A9D8F" CornerRadius="35" Padding="5, 10, 5, 10" Margin="0,14">
                         <Button Text="Добавить" BackgroundColor="#2A9D8F" FontSize="20" TextColor="White" HorizontalOptions="Center" Clicked="Add"></Button>
 
