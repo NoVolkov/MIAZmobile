@@ -21,5 +21,9 @@ namespace XamarinTest
             Button button = (Button)sender;
             button.Text = "Нажато!";
         }
+        private void picker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

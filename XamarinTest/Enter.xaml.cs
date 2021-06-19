@@ -15,6 +15,6 @@ namespace XamarinTest
         public Enter()
         {
             InitializeComponent();
-        }
+        }//q
     }
 }
