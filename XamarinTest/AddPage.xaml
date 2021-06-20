@@ -25,12 +25,12 @@
                             <ColumnDefinition Width="1*"></ColumnDefinition>
                             <ColumnDefinition Width="1*"></ColumnDefinition>
                             <ColumnDefinition Width="3*"></ColumnDefinition>
-                            <ColumnDefinition Width="4*"></ColumnDefinition>
+                            
                         </Grid.ColumnDefinitions>
                         <Entry Grid.Column="0" BackgroundColor="#0091AD" x:Name="txt_TopPres" TextColor="White" PlaceholderColor="White" Placeholder="Верх" VerticalOptions="Start" TextChanged="topCheack"></Entry>
                         <Entry Grid.Column="1" BackgroundColor="#0091AD" x:Name="txt_BotPres" TextColor="White" PlaceholderColor="White" Placeholder="Нижн" ></Entry>
                         <Label Grid.Column="2" TextColor="Black" Text="мм. рт. ст." VerticalOptions="End" Padding="0,0,5,10"></Label>
-                        <Entry Grid.Column="3" BackgroundColor="#0091AD" x:Name="txt_BotPrоильоes" TextColor="White" PlaceholderColor="White" Placeholder="Пульс" ></Entry>
+                        
                     </Grid>
                     <StackLayout>
                         <Grid>
